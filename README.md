@@ -1,6 +1,5 @@
 # PurpleBAM
-"""
 A machine learning program developed using PurpleAir sensor data.
 
 Air quality measurements collected for research purposes are typically taken with research-grade sensors, but their cost limits their accessibility for governments like India, which is where many of the deaths related to poor air quality occur. PurpleAir sensors provide a low-cost alternative to research-grade sensors, but their inaccuracy limits their viability in research. In an attempt to correct these low-cost measurements, we created two computational models in R, a continuous Hidden Markov Model (HMM) and a Random Forest Model. These models are fundamentally different from one another, with our HMM only considering PurpleAir PM2.5 air quality measurements in its observations and considering categorical ranges for the multiplier from BAM to PurpleAir readings in its hidden states. Conversely, our Random Forest considered the vast majority of variables collected at each time point, but did so in a temporally independent fashion. We found that the HMM model was unable to provide a sizable increase in predictive power over original PurpleAir sensors readings, while the Random Forest Model provided approximately a 2-fold increase in predictive power that does not appear to be enough to validate its use in research settings. 
-"""
+
